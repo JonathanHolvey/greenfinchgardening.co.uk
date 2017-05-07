@@ -10,7 +10,7 @@
 		<img class="site-logo" src="images/logo.svg" alt="Greenfinch Gardening"/>
 		<p class="mission">Organic &amp; nature<br/> friendly gardening in Bristol<br/> &amp; the Chew Valley</p>
 		<div class="social">
-			<a href="http://facebook.com"><img src="images/facebook.svg" alt="Facebook"></a>
+			<a href="http://facebook.com/greenfinchgardeningchewvalley"><img src="images/facebook.svg" alt="Facebook"></a>
 		</div>
 	</section>
 	<section>
