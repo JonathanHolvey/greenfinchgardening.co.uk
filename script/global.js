@@ -42,4 +42,17 @@ $(document).ready(function() {
 		current.addClass("previous").removeClass("current");
 		slideshow.pager.children().removeClass("active").eq(index).addClass("active");
 	}
+
+	// Scroll to anchor links within page
+	$("a").click(function(event) {
+		if (this.hash !== "") {
+			event.preventDefault();
+			var hash = this.hash;
+			$("html, body").animate({
+				scrollTop: $(hash).offset().top
+			}, 800, function() {
+				window.location.hash = hash;
+			});
+		}
+	});
 });
