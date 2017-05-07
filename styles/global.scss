@@ -275,14 +275,9 @@ blockquote,
 	.slide {
 		width: 100%;
 		height: 100%;
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-	}
-	.slide img {
-		min-width: 100%;
-		min-height: 100%;
-		object-fit: cover;
+		background-size: cover;
+	    background-repeat: no-repeat;
+	    background-position: 50% 50%;
 	}
 }
 .slide {
@@ -290,7 +285,7 @@ blockquote,
 	transform: translateX(100%);
 	&.current,
 	&.previous {
-		transition: transform 0.8s;
+		transition: transform 0.8s ease-in-out;
 	}
 	&.current {
 		transform: translateX(0);
@@ -354,5 +349,11 @@ blockquote,
 		position: absolute;
 		right: 0;
 		bottom: 0;
+	}
+}
+
+.slide[style^="background-image"] {
+	&[style*="slide1.jpg"] {
+		background-position: 20% 50%;
 	}
 }

@@ -25,9 +25,9 @@
 	</section>
 	<section>
 		<div  class="slideshow full-width">
-			<div class="slide current"><img src="images/slide1.jpg" alt=""></div>
-			<div class="slide"><img src="images/slide2.jpg" alt=""></div>
-			<div class="slide"><img src="images/slide3.jpg" alt=""></div>
+			<div class="slide current" style="background-image:url('images/slide1.jpg')"></div>
+			<div class="slide" style="background-image:url('images/slide2.jpg')"></div>
+			<div class="slide" style="background-image:url('images/slide3.jpg')"></div>
 		</div>
 		<div class="overlay-caption quote">A beautiful garden will always give back more than it receives</div>
 	</section>
