@@ -66,7 +66,7 @@ hr {
 	background-position: center;
 }
 section {
-	padding: 2rem 1rem;
+	padding: 2.5rem 1rem;
 	position: relative;
 	&.inverted {
 		background-image: url("../images/bg-green.jpg");
@@ -87,10 +87,13 @@ section {
 		text-align: center;
 		position: relative;
 		top: -1em;
+		box-sizing: border-box;
+		padding-left: 1em;
+		padding-right: 1em;
 	}
 	.full-width {
-		max-width: calc(100% + 2em);
-		width: calc(100% + 2em);
+		max-width: calc(100% + 2rem);
+		width: calc(100% + 2rem);
 		margin-left: -1rem;
 		margin-right: -1rem;
 	}
@@ -212,7 +215,8 @@ form {
 
 }
 .signature {
-	width: 15em;
+	width: 12em;
+	margin-bottom: -1em;
 }
 .social {
 	width: auto;
@@ -267,8 +271,8 @@ blockquote,
 	}
 }
 .slideshow {
-	margin-top: -2rem;
-	margin-bottom: -2rem;
+	margin-top: -2.5rem;
+	margin-bottom: -2.5rem;
 	height: 25em;
 	overflow: hidden;
 	position: relative;
@@ -339,7 +343,7 @@ blockquote,
 .footer {
 	font-size: 70%;
 	margin-top: 2em;
-	margin-bottom: -2em;
+	margin-bottom: -1.5rem;
 	position: relative;
 	a {
 		color: $green;
@@ -355,5 +359,41 @@ blockquote,
 .slide[style^="background-image"] {
 	&[style*="slide1.jpg"] {
 		background-position: 20% 50%;
+	}
+}
+
+@media all and (min-width: 30em) {
+	.slideshow {
+		height: 30em;
+	}
+	section nav {
+		text-align: right;
+	}
+}
+@media all and (min-width: 40em) {
+	body {
+		font-size: 115%;
+	}
+	.badge-info {
+		font-size: 110%;
+	}
+	.signature {
+		position: absolute;
+		left: calc(50% + 6em);
+		bottom: 0.5em;
+		margin: 0;
+		width: 10em;
+	}
+
+}
+@media all and (min-width: 60em) {
+	body {
+		font-size: 130%;
+	}
+	.site-logo {
+		max-width: 22rem;
+	}
+	.slideshow {
+		height: 20em;
 	}
 }
