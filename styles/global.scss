@@ -169,6 +169,11 @@ form {
 			}
 		}
 	}
+	input {
+		&:focus {
+			padding-right: 3em;
+		}
+	}
 	button {
 		width: 12em;
 		margin: 0 auto;

@@ -51,19 +51,19 @@
 		<p>If you'd like to find out more about how I could help, and my availability, then please drop me a line. I'd be delighted to come round to offer a no-obligations estimate.</p>
 		<form id="contact-form" action="send.php" method="POST">
 			<div class="field">
-				<input type="text" name="name" placeholder="Name"/>
+				<input type="text" name="name" placeholder="Name" required/>
 				<label for="name">Name</label>
 			</div>
 			<div class="field">
-				<input type="email" name="email" placeholder="Email address"/>
-				<label for="email">Email address</label>
+				<input type="email" name="email" placeholder="Email address" required/>
+				<label for="email">Email</label>
 			</div>
 			<div class="field">
 				<input type="tel" name="phone" placeholder="Phone number"/>
-				<label for="phone">Phone number</label>
+				<label for="phone">Phone</label>
 			</div>
 			<div class="field">
-				<textarea name="message" rows="6" placeholder="Message"></textarea>
+				<textarea name="message" rows="6" placeholder="Message" required></textarea>
 				<label for="message">Message</label>
 			</div>
 			<button name="submit">Send</button>
