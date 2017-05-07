@@ -7,7 +7,7 @@
 
 	$message .= "\n\nFrom: " . $name . "\nPhone: " . $phone . "\nEmail: ". $email;
 	
-	$to = "contact+gg@rocketchilli.com";
+	$to = "contact@greenfinchgardening.co.uk";
 	$headers = "From: " . $name . " <" . $email . ">";
 	
 	if (mail($to, $subject, stripslashes($message), $headers))
