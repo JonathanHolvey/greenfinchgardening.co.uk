@@ -48,7 +48,7 @@
 	<section class="inverted" id="contact">
 		<h1>Contact</h1>
 		<hr/>
-		<p>If you'd like to find out more about how I could help and my availability then please drop me a line. I'd be delighted to come round to offer a no-obligations estimate.</p>
+		<p>If you'd like to find out more about how I could help, and my availability, then please drop me a line. I'd be delighted to come round to offer a no-obligations estimate.</p>
 		<form id="contact-form" action="send.php" method="POST">
 			<div class="field">
 				<input type="text" name="name" placeholder="Name"/>

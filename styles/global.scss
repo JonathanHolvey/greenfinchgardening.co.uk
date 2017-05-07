@@ -222,11 +222,13 @@ form {
 	width: auto;
 	position: absolute;
 	margin: 0;
+	bottom: 0.8rem;
+	left: 1rem;
 	a {
 		display: inline-block;
 	}
 	img {
-		// display: block;
+		display: block;
 		height: 1.2em;
 	}
 }
@@ -394,6 +396,27 @@ blockquote,
 		max-width: 22rem;
 	}
 	.slideshow {
-		height: 20em;
+		height: 25em;
+	}
+	form {
+		position: relative;
+		margin-top: 3rem;
+		margin-bottom: 3rem;
+		.field {
+			width: calc(55% - 0.4rem);
+			margin-left: -5%;
+			&:last-of-type {
+				position: absolute;
+				left: calc(50% + 0.4rem);
+				top: 0;
+				margin-left: 0;
+			}
+			textarea {
+				height: 6.6em;
+			}
+		}
+		button {
+			width: 50%;
+		}
 	}
 }
