@@ -6,12 +6,7 @@
 </head>
 <body>
 	<section class="inverted">
-		<nav>
-			<a class="active" href="">Home</a>
-			<a href="#services">Services</a>
-			<a href="about">About</a>
-			<a href="#contact">Contact</a>
-		</nav>
+		<?php include("templates/header.php") ?>
 		<img class="site-logo" src="images/logo.svg" alt="Greenfinch Gardening"/>
 		<p class="mission">Organic &amp; nature<br/> friendly gardening in Bristol<br/> &amp; the Chew Valley</p>
 		<div class="social">
@@ -55,22 +50,27 @@
 		<hr/>
 		<p>If you'd like to find out more about how I could help and my availability then please drop me a line. I'd be delighted to come round to offer a no-obligations estimate.</p>
 		<form id="contact-form" action="send.php" method="POST">
-			<label for="name">Name</label>
-			<input type="text" name="name" placeholder="Name" />
-			<label for="email">Email address</label>
-			<input type="email" name="email" placeholder="Email address" />
-			<label for="phone">Phone number</label>
-			<input type="tel" name="phone" placeholder="Phone number" />
-			<label for="message">Message</label>
-			<textarea name="message" rows="6" placeholder="Message"></textarea>
+			<div class="field">
+				<input type="text" name="name" placeholder="Name"/>
+				<label for="name">Name</label>
+			</div>
+			<div class="field">
+				<input type="email" name="email" placeholder="Email address"/>
+				<label for="email">Email address</label>
+			</div>
+			<div class="field">
+				<input type="tel" name="phone" placeholder="Phone number"/>
+				<label for="phone">Phone number</label>
+			</div>
+			<div class="field">
+				<textarea name="message" rows="6" placeholder="Message"></textarea>
+				<label for="message">Message</label>
+			</div>
 			<button name="submit">Send</button>
 			<p class="message success">Your message was sent successfully. I'll be in touch soon.</p>
 			<p class="message error">There was a problem sending your message. Please try again.</p>
 		</form>
-		<div class="footer">
-			<a href="http://rocketchilli.com">Website by Rocket Chilli</a>
-			<div class="logo-icon">gg</div>
-		</div>
+		<?php include("templates/footer.php") ?>
 	</section>
 </body>
 </html>

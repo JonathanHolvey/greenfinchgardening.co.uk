@@ -1,24 +1,23 @@
 $(document).ready(function() {
 	// Create slideshow object
-	var slideshow = {
+	var slideshow = createSlideshow({
 		slides: $(".slideshow .slide"),
 		pager: $(".slideshow-pager"),
 		timeout: 5000
-	};
-	createSlideshow(slideshow);
+	});
 
 	// Initiate slideshow
 	function createSlideshow(slideshow) {
 		createPager(slideshow);
 		if (typeof(slideshow.pager) != "undefined")
-			slideshow.timer = setInterval(nextSlide, slideshow.timeout, slideshow);	
+			slideshow.timer = setInterval(nextSlide, slideshow.timeout, slideshow);
+		return slideshow;
 	}
 
 	// Build pager HTML
 	function createPager(slideshow) {
 		slideshow.slides.each(function() {
 			page = $("<div/>").appendTo(slideshow.pager);
-			console.log(page);
 			if ($(this).hasClass("current"))
 				page.addClass("current");
 		});

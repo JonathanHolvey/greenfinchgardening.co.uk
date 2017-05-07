@@ -1,6 +1,6 @@
 @import "reset";
 // @import "fonts";
-@import "images";
+@import "mixins";
 
 $green: #94ac78;
 $brown: #7f714a;
@@ -23,8 +23,11 @@ h1 {
 	text-transform: uppercase;
 	text-align: center;
 }
-p {
-	margin-bottom: 0.5em;
+p + * {
+	margin-top: 1.2rem;
+}
+p + p {
+	margin-top: 0.5em;
 }
 li {
 	margin-bottom: 0.25em;
@@ -54,13 +57,8 @@ a {
 		}
 	}
 }
-.inverted a {
-	&::after {
-		background: $dark-yellow;
-	}
-}
 hr {
-	@extend %image-hr-green;
+	@include image-hr($green);
 	margin: 1em auto;
 	height: 0.5em;
 	border: 0;
@@ -97,6 +95,17 @@ section {
 		margin-right: -1rem;
 	}
 }
+.inverted {
+	a {
+		&::after {
+			background: $dark-yellow;
+		}
+	}
+	hr {
+		@include image-hr($white);
+	}
+}
+
 nav a {
 	color: $white;
 	font-size: 90%;
@@ -113,6 +122,62 @@ nav a {
 			display: none;
 		}
 	}
+}
+
+form {
+	.field {
+		position: relative;
+		width: 20em;
+		max-width: 100%;
+		margin: 0 auto;
+	}
+	label {
+		display: none;
+		position: absolute;
+		right: 0.5em;
+		max-width: 100%;
+		top: 0.55em;
+		color: $grey;
+		font-size: 80%;
+	}
+	button,
+	input,
+	textarea {
+		display: block;
+		margin-bottom: 0.4em;
+		padding: 0.4em;
+		border: 0;
+		border-radius: 0.2rem;
+		font-size: 90%;
+		font-family: inherit;
+	}
+	input,
+	textarea {
+		width: 100%;
+		box-sizing: border-box;
+		background: $white;
+		color: $brown;
+		&:focus {
+			&:placeholder-shown + label {
+				display: none;
+			}
+			+ label {
+				display: block;
+			}
+		}
+	}
+	button {
+		width: 12em;
+		margin: 0 auto;
+		margin-top: 0.8em;
+		background: $dark-yellow;
+		color: $white;
+		cursor: pointer;
+	}
+	.message {
+		display: none;
+	}
+	@include placeholder($grey);
 }
 
 .mission {
@@ -138,12 +203,21 @@ nav a {
 		color: $brown;
 	}
 }
+.logo-icon {
+	font-size: 180%;
+	color: $dark-brown;
+	&:first-letter {
+		color: $white;
+	}
+
+}
 .signature {
 	width: 15em;
 }
 .social {
 	width: auto;
 	position: absolute;
+	margin: 0;
 	a {
 		display: inline-block;
 	}
@@ -264,5 +338,21 @@ blockquote,
 	}
 	.badge + ul {
 		margin-left: calc(50% + #{0.5em + $offset});
+	}
+}
+
+.footer {
+	font-size: 70%;
+	margin-top: 2em;
+	margin-bottom: -2em;
+	position: relative;
+	a {
+		color: $green;
+	}
+	.logo-icon {
+		font-size: 350%;
+		position: absolute;
+		right: 0;
+		bottom: 0;
 	}
 }
