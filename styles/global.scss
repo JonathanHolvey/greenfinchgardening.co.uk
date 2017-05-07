@@ -184,6 +184,8 @@ form {
 	}
 	.message {
 		display: none;
+		margin-top: 0.5em;
+		text-align: center;
 	}
 	@include placeholder($grey);
 }

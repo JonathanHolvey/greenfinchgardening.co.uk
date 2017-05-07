@@ -55,4 +55,17 @@ $(document).ready(function() {
 			});
 		}
 	});
+
+	// Submit contact form
+	$("#contact-form").on("submit", function(event) {
+		$("form .message").hide();
+		event.preventDefault();
+		$.ajax({
+			type: "post",
+			url: "send.php",
+			data: $("#contact-form").serialize(),
+			success: function(data, status, jqXHR) {
+				$("form .message.success").show();
+		}});
+	});
 });
