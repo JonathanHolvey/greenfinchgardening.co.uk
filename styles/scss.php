@@ -1,6 +1,7 @@
 <?php
-	require_once(dirname(__file__) . "/../libraries/scssphp-0.6.7/scss.inc.php");
+	require_once("../libraries/scssphp-0.6.7/scss.inc.php");
 	use Leafo\ScssPhp\Server;
-	$directory = dirname(__file__);
+
+	$directory = ".";
 	Server::serveFrom($directory);
 ?>
