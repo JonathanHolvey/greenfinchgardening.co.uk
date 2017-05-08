@@ -72,5 +72,6 @@
 		</form>
 		<?php include("templates/footer.php") ?>
 	</section>
+	<?php include("templates/tracking.php") ?>
 </body>
 </html>
