@@ -2,8 +2,8 @@ RewriteEngine On
 RewriteBase /
 
 # Remove www subdomain
-RewriteCond %{HTTP_HOST} ^www\.greenfinchgardening\.co\.uk [NC]
-RewriteRule	^(.*)$ http://greenfinchgardening.co.uk\$1 [R=301,NC,L,QSA]
+RewriteCond %{HTTP_HOST} ^www\.(.+) [NC]
+RewriteRule ^ http://%1%{REQUEST_URI} [L,R=301]
 
-# Compile SASS files to CSS
+# Serve SASS files from SASSPHP compiler
 RewriteRule ^styles/([^/]+\.scss) styles/scss.php/$1 [NC,L]
