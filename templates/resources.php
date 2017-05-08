@@ -3,7 +3,7 @@
 <link rel="icon" type="image/png" href="images/icon-48.png" sizes="48x48"/>
 <link rel="icon" type="image/png" href="images/icon-192.png" sizes="192x192"/>
 <link rel="shortcut icon" href="images/icon.ico"/>
-<link rel="stylesheet" type="text/css" href="styles/global.scss"/>
+<link rel="stylesheet" type="text/css" href="styles/main.scss"/>
 <script type="text/javascript" src="libraries/jquery.js"></script>
-<script type="text/javascript" src="script/global.js"></script>
+<script type="text/javascript" src="script/main.js"></script>
 <meta name="theme-color" content="#94ac78"/>
