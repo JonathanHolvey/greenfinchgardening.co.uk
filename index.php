@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 	<title>Greenfinch Gardening</title>
 	<?php include("templates/resources.php") ?>
