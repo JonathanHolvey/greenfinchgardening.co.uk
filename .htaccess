@@ -5,5 +5,5 @@ RewriteBase /
 RewriteCond %{HTTP_HOST} ^www\.(.+) [NC]
 RewriteRule ^ http://%1%{REQUEST_URI} [L,R=301]
 
-# Serve SASS files from SASSPHP compiler
-RewriteRule ^styles/([^/]+\.scss) styles/scss.php?p=$1 [NC,L]
+# Serve minified SASS files from SASSPHP compiler
+RewriteRule ^styles/([^/]+\.scss) styles/scss.php?p=$1&min [NC,L]

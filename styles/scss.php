@@ -1,7 +1,13 @@
 <?php
 	require_once("../libraries/scssphp-0.6.7/scss.inc.php");
+	use Leafo\ScssPhp\Compiler;
 	use Leafo\ScssPhp\Server;
 
+	$scss = new Compiler();
+	if (array_key_exists("min", $_GET))
+		$scss->setFormatter("Leafo\ScssPhp\Formatter\Crunched");
+
 	$directory = ".";
-	Server::serveFrom($directory);
+	$server = new Server($directory, null, $scss);
+	$server->serve();
 ?>
