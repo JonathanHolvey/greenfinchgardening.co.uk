@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Greenfinch Gardening</title>
+	<title>Greenfinch Gardening - Bristol and the Chew Valley</title>
+	<meta name="description" content="Christina Holvey runs Greenfinch Gardening; an organic and nature friendly gardener servicing Bristol and the Chew Valley. She can help with maintenance, border and container design, and wildlife homes and feeders."/>
 	<?php include("templates/resources.php") ?>
 </head>
 <body>
