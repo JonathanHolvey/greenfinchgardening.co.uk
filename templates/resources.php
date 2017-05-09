@@ -6,4 +6,4 @@
 <link rel="stylesheet" type="text/css" href="styles/main.scss"/>
 <script type="text/javascript" src="libraries/jquery.js"></script>
 <script type="text/javascript" src="script/main.js"></script>
-<meta name="theme-color" content="#94ac78"/>
+<meta name="theme-color" content="#bfcdae"/>
