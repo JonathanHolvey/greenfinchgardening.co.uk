@@ -74,6 +74,10 @@ section {
 		background-position: center;
 		color: $white;
 	}
+	&.no-padding {
+		padding-top: 0;
+		padding-bottom: 0;
+	}
 	> * {
 		width: 100%;
 		max-width: 40rem;
@@ -216,7 +220,7 @@ form {
 .logo-icon {
 	font-size: 180%;
 	color: $dark-brown;
-	&:first-letter {
+	&::first-letter {
 		color: $white;
 	}
 
@@ -280,8 +284,8 @@ blockquote,
 	}
 }
 .slideshow {
-	margin-top: -2.5rem;
-	margin-bottom: -2.5rem;
+	// margin-top: -2.5rem;
+	// margin-bottom: -2.5rem;
 	height: 25em;
 	overflow: hidden;
 	position: relative;
@@ -309,9 +313,10 @@ blockquote,
 
 }
 .slideshow-pager {
-	$size: 0.5em;
-	$grow: 0.4em;
+	$size: 0.4em;
+	$grow: 0.3em;
 	$spacing: 0.4em;
+	width: auto;
 	text-align: center;
 	padding-top: 0.7em;
 	padding-bottom: 0;
@@ -389,7 +394,7 @@ blockquote,
 	.signature {
 		position: absolute;
 		left: calc(50% + 6em);
-		bottom: 0.5em;
+		bottom: 1em;
 		margin: 0;
 		width: 10em;
 	}
@@ -424,6 +429,12 @@ blockquote,
 		}
 		button {
 			width: 50%;
+		}
+	}
+	section {
+		&:not(.inverted):not(.no-padding) {
+			padding-top: 3.5rem;
+			padding-bottom: 3.5rem;
 		}
 	}
 }

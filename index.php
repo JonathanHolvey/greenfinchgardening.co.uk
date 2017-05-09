@@ -23,7 +23,7 @@
 		</p>
 		<img class="signature" src="images/signature.svg" alt="Christina Holvey"/>
 	</section>
-	<section>
+	<section class="no-padding">
 		<div  class="slideshow full-width">
 			<div class="slide current" style="background-image:url('images/slide1.jpg')"></div>
 			<div class="slide" style="background-image:url('images/slide2.jpg')"></div>
@@ -31,7 +31,7 @@
 		</div>
 		<div class="overlay-caption quote">A beautiful garden will always give back more than it receives</div>
 	</section>
-	<section class="slideshow-pager"></section>
+	<div class="slideshow-pager"></div>
 	<section id="services">
 		<h1>Services</h1>
 		<hr/>
