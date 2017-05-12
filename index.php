@@ -6,14 +6,14 @@
 	<?php include("templates/resources.php") ?>
 </head>
 <body>
-	<section class="inverted">
+	<header class="inverted">
 		<?php include("templates/header.php") ?>
 		<img class="site-logo" src="images/logo.svg" alt="Greenfinch Gardening"/>
 		<p class="mission">Organic &amp; nature<br/> friendly gardening in Bristol<br/> &amp; the Chew Valley</p>
 		<div class="social">
 			<a href="http://facebook.com/greenfinchgardeningchewvalley"><img src="images/facebook.svg" alt="Facebook"></a>
 		</div>
-	</section>
+	</header>
 	<section>
 		<p>Living in the heart of the Chew Valley, I'm an RHS trained Gardener. I'm dedicated to providing a friendly, reliable service, that will breathe life back into your garden with an ethos that is at one with nature.</p>
 		<div class="logo-text"><em>G</em>reenfinch <em>G</em>ardening</div>
@@ -34,7 +34,7 @@
 	</section>
 	<div class="slideshow-pager"></div>
 	<section id="services">
-		<h1>Services</h1>
+		<h2>Services</h2>
 		<hr/>
 		<div class="badge-info">
 			<img class="badge" src="images/rhs.svg" alt="RHS trained"/>
@@ -47,7 +47,7 @@
 		</div>
 	</section>
 	<section class="inverted" id="contact">
-		<h1>Contact</h1>
+		<h2>Contact</h2>
 		<hr/>
 		<p>If you'd like to find out more about how I could help, and my availability, then please drop me a line. I'd be delighted to come round to offer a no-obligations estimate.</p>
 		<form id="contact-form" action="send.php" method="POST">

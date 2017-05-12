@@ -18,7 +18,7 @@ body {
 	color: $brown;
 	min-width: 19em;
 }
-h1 {
+h2 {
 	font-size: 140%;
 	text-transform: uppercase;
 	text-align: center;
@@ -65,7 +65,8 @@ hr {
 	background-repeat: no-repeat;
 	background-position: center;
 }
-section {
+section,
+header {
 	padding: 2.5rem 1rem;
 	position: relative;
 	&.inverted {
@@ -358,7 +359,7 @@ blockquote,
 	}
 }
 
-.footer {
+footer {
 	font-size: 70%;
 	margin-top: 2em;
 	margin-bottom: -1.5rem;
@@ -384,7 +385,7 @@ blockquote,
 	.slideshow {
 		height: 30em;
 	}
-	section nav {
+	header nav {
 		text-align: right;
 	}
 }
