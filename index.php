@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<title>Greenfinch Gardening - Bristol and the Chew Valley</title>
-	<meta name="description" content="Christina Holvey runs Greenfinch Gardening; an organic and nature friendly gardener servicing Bristol and the Chew Valley. She can help with maintenance, border and container design, and wildlife homes and feeders."/>
+	<meta name="description" id="description" content="Christina Holvey runs Greenfinch Gardening; an organic and nature friendly gardener servicing Bristol and the Chew Valley. She can help with maintenance, border and container design, and wildlife homes and feeders."/>
 	<?php include("templates/resources.php") ?>
 </head>
 <body>
@@ -52,20 +52,20 @@
 		<p>If you'd like to find out more about how I could help, and my availability, then please drop me a line. I'd be delighted to come round to offer a no-obligations estimate.</p>
 		<form id="contact-form" action="send.php" method="POST">
 			<div class="field">
-				<input type="text" name="name" placeholder="Name" required/>
-				<label for="name">Name</label>
+				<input type="text" name="name" id="contact-name" placeholder="Name" required/>
+				<label for="contact-name">Name</label>
 			</div>
 			<div class="field">
-				<input type="email" name="email" placeholder="Email address" required/>
-				<label for="email">Email</label>
+				<input type="email" name="email" id="contact-email" placeholder="Email address" required/>
+				<label for="contact-email">Email</label>
 			</div>
 			<div class="field">
-				<input type="tel" name="phone" placeholder="Phone number"/>
-				<label for="phone">Phone</label>
+				<input type="tel" name="phone" id="contact-phone" placeholder="Phone number"/>
+				<label for="contact-phone">Phone</label>
 			</div>
 			<div class="field">
-				<textarea name="message" rows="6" placeholder="Message" required></textarea>
-				<label for="message">Message</label>
+				<textarea name="message" id="contact-message" rows="6" placeholder="Message" required></textarea>
+				<label for="contact-message">Message</label>
 			</div>
 			<button name="submit">Send</button>
 			<p class="message success">Your message was sent successfully. I'll be in touch soon.</p>
