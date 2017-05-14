@@ -45,7 +45,7 @@ $(document).ready(function() {
 
 	// Scroll to anchor links within page
 	$("a").click(function(event) {
-		if (this.hash !== "") {
+		if (this.hash !== "" && $(this).attr("href").startsWith("#")) {
 			event.preventDefault();
 			var hash = this.hash;
 			$("html, body").animate({
