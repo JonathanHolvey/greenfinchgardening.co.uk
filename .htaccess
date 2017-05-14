@@ -3,6 +3,10 @@ RewriteBase /
 # Remove www subdomain
 RewriteCond %{HTTP_HOST} ^www\.(.+) [NC]
 RewriteRule ^ http://%1%{REQUEST_URI} [L,R=301]
+# Force HTTPS
+RewriteCond %{HTTP_HOST} ^greenfinchgardening [NC]
+RewriteCond %{HTTPS} !=on
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 # Serve PHP files from root without extension
 RewriteRule ^([^/.]+)$ $1.php [NC,L]
 # Serve minified SASS files from SASSPHP compiler
