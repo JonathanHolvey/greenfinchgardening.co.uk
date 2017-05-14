@@ -1,3 +1,2 @@
-<script type="text/javascript" src="libraries/jquery.js"></script>
-<script type="text/javascript" src="script/main.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script><script type="text/javascript" src="script/main.js"></script>
 <?php include("templates/tracking.php") ?>
