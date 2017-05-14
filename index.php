@@ -10,9 +10,6 @@
 		<?php include("templates/header.php") ?>
 		<img class="site-logo" src="images/logo.svg" alt="Greenfinch Gardening"/>
 		<p class="mission">Organic &amp; nature<br/> friendly gardening in Bristol<br/> &amp; the Chew Valley</p>
-		<div class="social">
-			<a href="http://facebook.com/greenfinchgardeningchewvalley"><img src="images/facebook.svg" alt="Facebook"></a>
-		</div>
 	</header>
 	<section>
 		<p>Living in the heart of the Chew Valley, I'm an RHS trained Gardener. I'm dedicated to providing a friendly, reliable service, that will breathe life back into your garden with an ethos that is at one with nature.</p>
