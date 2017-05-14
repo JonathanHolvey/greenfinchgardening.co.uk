@@ -51,14 +51,17 @@
 			<div class="field">
 				<input type="text" name="name" id="contact-name" placeholder="Name" required/>
 				<label for="contact-name">Name</label>
+				<div class="valid-flag"></div>
 			</div>
 			<div class="field">
 				<input type="email" name="email" id="contact-email" placeholder="Email address" required/>
 				<label for="contact-email">Email</label>
+				<div class="valid-flag"></div>
 			</div>
 			<div class="field">
-				<input type="tel" name="phone" id="contact-phone" placeholder="Phone number"/>
+				<input type="tel" name="phone" id="contact-phone" placeholder="Phone number" pattern="(\+ ?)?\d+"/>
 				<label for="contact-phone">Phone</label>
+				<div class="valid-flag"></div>
 			</div>
 			<div class="field">
 				<textarea name="message" id="contact-message" rows="6" placeholder="Message" required></textarea>

@@ -9,6 +9,7 @@ $yellow: #e0ce4d;
 $dark-yellow: #e0b54d;
 $grey: #9f9a8e;
 $white: #fff;
+$red: #cc6358;
 $shadow: rgba(0, 0, 0, 0.4);
 
 body {
@@ -189,8 +190,37 @@ form {
 		}
 	}
 	input {
+		+ label + .valid-flag {
+			background-repeat: no-repeat;
+			background-size: 100%;
+			position: absolute;
+			top: 0.35em;
+			right: 0.3em;
+			width: 1.1em;
+			height: 100%;
+		}
 		&:focus {
 			padding-right: 3em;
+		}
+		&:valid {
+			border-right: 2em solid lighten($green, 25);
+			+ label + .valid-flag {
+				@include image-tick;
+			}
+		}
+		&:invalid {
+			border-right: 2em solid lighten($red, 25);
+			+ label + .valid-flag {
+				@include image-cross;
+			}
+		}
+		&:placeholder-shown:valid,
+		&:placeholder-shown:invalid,
+		&:focus {
+			border: 0;
+			+ label + .valid-flag {
+				display: none;
+			}
 		}
 	}
 	button {
@@ -305,8 +335,6 @@ blockquote,
 	}
 }
 .slideshow {
-	// margin-top: -2.5rem;
-	// margin-bottom: -2.5rem;
 	height: 25em;
 	overflow: hidden;
 	position: relative;
