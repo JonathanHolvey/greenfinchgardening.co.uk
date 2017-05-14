@@ -131,12 +131,15 @@ nav a {
 	text-transform: lowercase;
 	text-decoration: none;
 	display: inline-block;
-	padding: 0.3em;
-	padding-bottom: 0.2em;
+	margin: 0.3em;
+	margin-bottom: 0.2em;
 	border-radius: 0.3rem;
 	&.active {
 		color: $dark-brown;
 		background: $dark-yellow;
+		padding: 0.3em;
+		padding-bottom: 0.2em;
+		margin: 0;
 		&::after {
 			display: none;
 		}
