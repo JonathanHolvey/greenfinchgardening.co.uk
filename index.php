@@ -3,6 +3,11 @@
 <head>
 	<title>Greenfinch Gardening - Bristol and the Chew Valley</title>
 	<meta name="description" id="description" content="Christina Holvey runs Greenfinch Gardening; an organic and nature friendly gardener servicing Bristol and the Chew Valley. She can help with maintenance, border and container design, and wildlife homes and feeders."/>
+	<meta property="og:title" content="Greenfinch Gardening"/>
+	<meta property="og:description" content="Christina Holvey runs Greenfinch Gardening; an organic and nature friendly gardener servicing Bristol and the Chew Valley"/>
+	<meta property="og:image" content="http://greenfinchgardening.co.uk/images/social-banner.jpg"/>
+	<meta property="og:url" content="http://greenfinchgardening.co.uk"/>
+	<meta name="twitter:card" content="summary_large_image"/>	
 	<?php include("templates/resources.php") ?>
 </head>
 <body>
