@@ -1,4 +1,7 @@
 <?php
+	header("Content-Type: application/json; charset=utf-8");
+	$response = [];
+
 	$name = stripslashes($_POST["name"]);
 	$email = $_POST["email"];
 	$phone = $_POST["phone"];
@@ -10,9 +13,13 @@
 	$to = "contact@greenfinchgardening.co.uk";
 	$headers = "From: " . $name . " <" . $email . ">";
 	
-	if (mail($to, $subject, stripslashes($message), $headers))
-		http_response_code(201);
-	else
-		http_response_code(400);
+	if (preg_match("/^staging\./", $_SERVER["HTTP_HOST"]))
+		$to = "contact@rocketchilli.com";
 
+	if (mail($to, $subject, stripslashes($message), $headers))
+		$response["status"] = "success";
+	else
+		$response["status"] = "error";
+
+	echo json_encode($response);
 ?>

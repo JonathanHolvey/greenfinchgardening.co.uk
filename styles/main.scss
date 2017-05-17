@@ -111,6 +111,7 @@ header {
 }
 .inverted {
 	a {
+		color: $dark-yellow;
 		&::after {
 			background: $dark-yellow;
 		}
@@ -123,6 +124,12 @@ header {
 		em {
 			color: $dark-brown;
 		}
+	}
+	nav a {
+		color: $white;
+	}
+	footer a {
+		color: $green;
 	}
 }
 
@@ -480,10 +487,8 @@ footer {
 			width: 50%;
 		}
 	}
-	section {
-		&:not(.inverted):not(.no-padding) {
-			padding-top: 3.5rem;
-			padding-bottom: 3.5rem;
-		}
+	section:not(.inverted):not(.no-padding) {
+		padding-top: 3.5rem;
+		padding-bottom: 3.5rem;
 	}
 }

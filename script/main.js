@@ -63,9 +63,11 @@ $(document).ready(function() {
 		$.ajax({
 			type: "post",
 			url: $(this).attr("action"),
-			data: $(this).serialize(),
-			success: function(data, status, jqXHR) {
-				$("form .message.success").show();
-		}});
+			data: $(this).serialize()
+		}).done(function(data, status, jqXHR) {
+			$("form .message." + data.status).show();
+		}).fail(function(data, status, jqXHR) {
+			$("form .message.error").show();
+		});
 	});
 });

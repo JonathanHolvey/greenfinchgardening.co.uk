@@ -74,7 +74,7 @@
 			</div>
 			<button name="submit">Send</button>
 			<p class="message success">Your message was sent successfully. I'll be in touch soon.</p>
-			<p class="message error">There was a problem sending your message. Please try again.</p>
+			<p class="message error">There was a problem sending your message. Please try again, or contact <a href="mailto:christina@greenfinchgardening.co.uk">christina@greenfinchgardening.co.uk</a> directly.</p>
 		</form>
 		<?php include("../templates/footer.php") ?>
 	</section>
