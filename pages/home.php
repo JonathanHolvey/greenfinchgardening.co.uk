@@ -8,11 +8,11 @@
 	<meta property="og:image" content="http://greenfinchgardening.co.uk/images/social-banner.jpg"/>
 	<meta property="og:url" content="http://greenfinchgardening.co.uk"/>
 	<meta name="twitter:card" content="summary_large_image"/>	
-	<?php include("templates/resources.php") ?>
+	<?php include("../templates/resources.php") ?>
 </head>
 <body>
 	<header class="inverted">
-		<?php include("templates/header.php") ?>
+		<?php include("../templates/header.php") ?>
 		<img class="site-logo" src="images/logo.svg" alt="Greenfinch Gardening"/>
 		<p class="mission">Organic &amp; nature<br/> friendly gardening in Bristol<br/> &amp; the Chew Valley</p>
 	</header>
@@ -52,7 +52,7 @@
 		<h2>Contact</h2>
 		<hr/>
 		<p>If you'd like to find out more about how I could help, and my availability, then please drop me a line. I'd be delighted to come round to offer a no-obligations estimate.</p>
-		<form id="contact-form" action="send.php" method="POST">
+		<form id="contact-form" action="script/send.php" method="POST">
 			<div class="field">
 				<input type="text" name="name" id="contact-name" placeholder="Name" required/>
 				<label for="contact-name">Name</label>
@@ -76,8 +76,9 @@
 			<p class="message success">Your message was sent successfully. I'll be in touch soon.</p>
 			<p class="message error">There was a problem sending your message. Please try again.</p>
 		</form>
-		<?php include("templates/footer.php") ?>
+		<?php include("../templates/footer.php") ?>
 	</section>
-	<?php include("templates/defer.php") ?>
+	<?php include("../templates/defer.php") ?>
+	<?php include("../templates/tracking.php") ?>
 </body>
 </html>

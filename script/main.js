@@ -62,8 +62,8 @@ $(document).ready(function() {
 		event.preventDefault();
 		$.ajax({
 			type: "post",
-			url: "send.php",
-			data: $("#contact-form").serialize(),
+			url: $(this).attr("action"),
+			data: $(this).serialize(),
 			success: function(data, status, jqXHR) {
 				$("form .message.success").show();
 		}});
