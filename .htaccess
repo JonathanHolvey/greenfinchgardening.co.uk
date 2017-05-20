@@ -13,11 +13,13 @@ RewriteRule ^(\?.*)?$ pages/home.php [NC,L]
 # Serve minified SASS files from SASSPHP compiler
 RewriteRule ^styles/([^/]+\.scss) styles/scss.php?p=$1&min [NC,L]
 
-# Cache static assets for one year
-<filesMatch ".(jpg|jpeg|png|gif|ico|svg)$">
-	Header set Cache-Control "max-age=31536000, public"
-</filesMatch>
-# Cache CSS and JavaScript for one week
-<filesMatch ".(css|js)$">
-	Header set Cache-Control "max-age=604800, public"
-</filesMatch>
+<IfModule mod_headers>
+	# Cache static assets for one year
+	<filesMatch ".(jpg|jpeg|png|gif|ico|svg)$">
+		# Header set Cache-Control "max-age=31536000, public"
+	</filesMatch>
+	# Cache CSS and JavaScript for one week
+	<filesMatch ".(css|js)$">
+		# Header set Cache-Control "max-age=604800, public"
+	</filesMatch>
+</IfModule>
