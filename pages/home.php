@@ -39,7 +39,7 @@
 		<h2>Services</h2>
 		<hr/>
 		<div class="badge-info">
-			<img class="badge" src="images/rhs.svg" alt="RHS trained"/>
+			<img class="badge" src="images/rhs-qualified.svg" alt="RHS qualified"/>
 			<ul>
 				<li>Garden maintenance</li>
 				<li>Pruning, planting &amp; mowing</li>
