@@ -3,5 +3,5 @@
 <link rel="icon" type="image/png" href="images/icon-48.png" sizes="48x48"/>
 <link rel="icon" type="image/png" href="images/icon-192.png" sizes="192x192"/>
 <link rel="shortcut icon" href="images/icon.ico"/>
-<link rel="stylesheet" type="text/css" href="styles/main.scss"/>
+<link rel="stylesheet" type="text/css" href="styles/main.css"/>
 <meta name="theme-color" content="#bfcdae"/>

@@ -1,6 +1,6 @@
 @mixin image-hr($colour) {
 	// background-image: url("../images/rule.svg");
-	$hex: str-slice($colour, 2);
+	$hex: str-slice("#{$colour}", 2);
 	background-image: url("data:image/svg+xml,%3C%3Fxml version%3D'1.0' encoding%3D'UTF-8'%3F%3E%0A%3Csvg width%3D'66.8mm' height%3D'1.46mm' version%3D'1.1' viewBox%3D'0 0 66.793198 1.4599777' xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%3E%0A %3Cpath d%3D'm34.4 0.00201c-6.1 0.169-12.2 0.423-18.3 0.55-4.49 0.0847-8.95 0.0423-13.4 0.0423h-2.07c-0.19-0.106-0.529-0.0635-0.572 0.19 0 0.254 0.318 0.296 0.508 0.296 3.22 0.0847 6.46 0.0212 9.67 0 6.16-0.0423 12.3-0.127 18.5-0.318 6.73-0.169 13.4-0.254 20.2 0.0847 4.06 0.169 8.13 0.423 12.2 0.445 1.74 0.0423 3.47 0.0635 5.21 0.0847 0.19 0.212 0.698-0.0212 0.529-0.296-0.233-0.254-0.593-0.169-0.889-0.191-5.14-0.0635-10.3-0.233-15.4-0.508-5.33-0.254-10.7-0.402-16-0.381z' fill%3D'%23#{$hex}' fill-rule%3D'evenodd'%2F%3E%0A%3C%2Fsvg%3E%0A");;
 }
 @mixin image-cross {

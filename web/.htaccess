@@ -10,8 +10,6 @@ RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 # Serve PHP files from pages directory without extension
 RewriteRule ^([^/.]+)$ pages/$1.php [NC,L]
 RewriteRule ^(\?.*)?$ pages/home.php [NC,L]
-# Serve minified SASS files from SASSPHP compiler
-RewriteRule ^styles/([^/]+\.scss) styles/scss.php?p=$1&min [NC,L]
 
 <IfModule mod_headers.c>
 	# Cache static assets for one year
